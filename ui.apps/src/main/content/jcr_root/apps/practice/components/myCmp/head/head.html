@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="assets/header-fixed.css">
 	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
 
-    <style>
+    <!-- <style>
         .header-fixed {
         background-color:#292c2f;
         box-shadow:0 1px 1px #ccc;
@@ -155,11 +155,13 @@
             padding: 0;
             height: 1500px;
         }
-    </style>
+    </style> -->
 
 </head>
 
 <body>
+
+    <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.all @ categories='practice.head'}" />
 
 <header class="header-fixed">
 
